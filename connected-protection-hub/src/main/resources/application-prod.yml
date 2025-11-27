@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cph_prod
+    username: cph_user
+    password: ${DB_PASSWORD:changeme}
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+logging:
+  level:
+    com.assurant.cph: INFO
+    org.hibernate.SQL: WARN
